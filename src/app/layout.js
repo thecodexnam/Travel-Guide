@@ -17,7 +17,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${boldonse.className} min-h-screen bg-black pt-28 text-white md:pt-24`}
+        className={`${boldonse.className} min-h-screen pt-28 text-white md:pt-24`}
       >
         <NavBar />
         {children}
