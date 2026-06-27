@@ -24,6 +24,50 @@ body {
   text-rendering: optimizeLegibility;
 }
 
+/* Layout utilities */
+:root {
+  --container-max: 1100px;
+  --muted: rgba(235, 245, 255, 0.12);
+}
+
+.container {
+  max-width: var(--container-max);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* Card component baseline */
+.card {
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  border: 1px solid var(--panel-border);
+  border-radius: 1.25rem;
+  padding: 1rem;
+  box-shadow: 0 8px 30px rgba(2,6,23,0.45);
+}
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.9rem;
+  border-radius: 9999px;
+  border: 1px solid transparent;
+  background: linear-gradient(90deg, rgba(103,232,249,0.12), rgba(59,130,246,0.06));
+  color: var(--foreground);
+  font-weight: 600;
+}
+.btn--accent {
+  background: linear-gradient(90deg, var(--accent), #7dd3fc 80%);
+  color: #042027;
+}
+
+/* Utility text */
+.muted { color: rgba(255,255,255,0.72); }
+.micro { font-size: 0.75rem; letter-spacing: 0.12em; text-transform: uppercase; }
+
 main {
   position: relative;
 }
